@@ -1,0 +1,207 @@
+/* Đặt lại các mặc định CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://via.placeholder.com/1200x500');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 4rem 0;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background-color: #ff5e57;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff3b31;
+  }
+  
+  /* Product Section */
+  .product-section {
+    padding: 2rem 0;
+  }
+  
+  .product-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .product {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .product h3 {
+    font-size: 1.5rem;
+  }
+  
+  .product p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .product button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .hero h2, .hero p {
+    margin-bottom: 20px;
+  }
+  
+  .hero .hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .hero {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero h2, .hero p {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Đảm bảo văn bản hiển thị phía trên hình ảnh */
+  }
+  
+  .hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh trải đều mà không bị méo */
+    z-index: 1; /* Đặt hình ảnh phía sau văn bản */
+    opacity: 0.6; /* Điều chỉnh độ mờ của hình ảnh để làm nổi bật văn bản */
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2; /* Đảm bảo nút hiển thị trên ảnh */
+  }
+  
+  
